@@ -218,7 +218,7 @@ export class ChartsComponent implements OnInit {
     const prefixCounts: any = {};
     contacts.forEach(contact => {
       if(contact.telephone){
-        const phonePrefix = contact.telephone.substring(0,1);
+        const phonePrefix = contact.telephone.substring(0, contact.telephone.trim().indexOf(' '));
         if(prefixCounts[phonePrefix]){
           prefixCounts[phonePrefix]++
         }else{
