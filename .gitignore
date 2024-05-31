@@ -12,7 +12,7 @@
 
 # profiling files
 chrome-profiler-events*.json
-
+/node_modules
 # IDEs and editors
 /.idea
 .project
