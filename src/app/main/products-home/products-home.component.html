@@ -46,3 +46,18 @@
   <tr mat-row *matRowDef="let row; columns: ['name', 'stock', 'price', 'active', 'date_added', 'actions'];"
   (click)="OpenDetailForm(row)"></tr>
 </table>
+<!-- 
+<mat-grid-list cols="4" class="listGrid">
+  <mat-grid-tile *ngFor="let product of dataSource" class="gritItem">
+   <div>
+     <h1>{{product.name}}</h1>
+    </div>
+    <div>
+      <p>Stock: {{product.stock}}</p>
+    </div>
+    <div>
+      {{product.date_added  | date: 'dd/MM/yyyy'}} 
+      <mat-icon>calendar_today</mat-icon> 
+    </div>
+  </mat-grid-tile>
+</mat-grid-list> -->

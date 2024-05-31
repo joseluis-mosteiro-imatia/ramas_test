@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductUpdateComponent implements OnInit {
 
-  contact:any ={};
+  product:any ={};
 
   constructor(
     private producSe: ProductsService,
@@ -19,14 +19,14 @@ export class ProductUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     this.producSe.getProduct(this.route.snapshot.params['id']).subscribe(data => {
-      this.contact = data;
+      this.product = data;
     });
   }
 
 
 
-  updateContact(){
-    this.producSe.updateProd(this.contact).subscribe(data =>{
+  updateproduct(){
+    this.producSe.updateProd(this.product).subscribe(data =>{
       this.navigateToDetail();
     });
   }

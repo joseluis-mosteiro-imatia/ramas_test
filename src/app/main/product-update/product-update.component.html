@@ -1,31 +1,31 @@
 <mat-card class="card">
-  <mat-card-title>Edita el Contacto</mat-card-title>
+  <mat-card-title>Edita el producto</mat-card-title>
   <mat-card-content class="card-content">
-   <form (submit)="updateContact()">
+   <form (submit)="updateproduct()">
 
     <mat-form-field appearance="outline">
       <mat-label>Name</mat-label>
-      <input matInput type="text" name="name" [(ngModel)]="contact.name">
+      <input matInput type="text" name="name" [(ngModel)]="product.name">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>stock</mat-label>
-      <input matInput type="text" name="stock" [(ngModel)]="contact.stock">
+      <input matInput type="text" name="stock" [(ngModel)]="product.stock">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>price</mat-label>
-      <input matInput type="text" name="price" [(ngModel)]="contact.price">
+      <input matInput type="text" name="price" [(ngModel)]="product.price">
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>active</mat-label>
-      <input matInput type="string" name="active" [(ngModel)]="contact.active">
+      <mat-checkbox color="primary"><input matInput type="string" name="active" [(ngModel)]="product.active"></mat-checkbox>
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>Fecha</mat-label>
-      <input matInput [matDatepicker]="peep" name="date_added" [(ngModel)]="contact.date_added">
+      <input matInput [matDatepicker]="peep" name="date_added" [(ngModel)]="product.date_added">
       <mat-datepicker-toggle matIconSuffix [for]="peep"></mat-datepicker-toggle>
       <mat-datepicker #peep>
       </mat-datepicker>

@@ -2,3 +2,14 @@ table {
   margin:20px 0px 0 40px;
   width: calc(100% - 80px);
 }
+
+.gritItem{
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.listGrid {
+  display: flex;
+  flex-direction: column;
+}

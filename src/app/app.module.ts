@@ -30,6 +30,9 @@ import { ContactsDeleteComponent } from './contacts-delete/contacts-delete.compo
 import { ProductsDeleteComponent } from './main/products-delete/products-delete.component';
 import { ChartsComponent } from './charts/charts.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -67,7 +70,9 @@ registerLocaleData(localeEs);
     ReactiveFormsModule,
     MatNativeDateModule,
     MatDialogModule,
-    NgxChartsModule
+    NgxChartsModule,
+    MatGridListModule,
+    MatCheckboxModule
   ],
   providers: [
     {
