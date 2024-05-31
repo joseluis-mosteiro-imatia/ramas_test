@@ -1,3 +1,4 @@
+<div>HOLI!</div>
 <a mat-stroked-button routerLink="/products/new" id="new-contact"> Nuevo Producto</a>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 card">
 
@@ -41,6 +42,7 @@
       </button>
     </td>
   </ng-container>
+  
 
   <tr mat-header-row *matHeaderRowDef="['name', 'stock', 'price', 'active', 'date_added', 'actions']"></tr>
   <tr mat-row *matRowDef="let row; columns: ['name', 'stock', 'price', 'active', 'date_added', 'actions'];"
